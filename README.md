@@ -18,7 +18,7 @@ Project Due: Week 12/13
 
 ### 3. All trips
 
-![pic3](pic/fig3.svg)
+![pic3](pic/fig5.svg)
 
 ## 1. Instructions
 
