@@ -5,6 +5,13 @@ using Distributions;
 using Random;
 using Plots;
 
+# export every funtion name you want to use by importall
+export dataSplitTest, getDF, ListDataSplite, get_trip
+
+function dataSplitTest(a = "dataSplit used!")
+    print(a)
+end
+
 function getDF(df_name)
     return CSV.read(df_name, 
     delim = ',',
@@ -41,21 +48,6 @@ function get_trip(P, Max_trip=49)
     end
     return P_trip
 end
-
-function getPic(P_trip, color = :inferno, markersize = 1)
-    ## color is a list of color, you should change the color and data
-    ## you can find colors at: http://docs.juliaplots.org/latest/colors/#misc
-    kk = length(P_trip)
-    colors = RGBA[cgrad(color)[z] for z=range(0,stop=1,length=kk)]
-    p1 = scatter()
-    for i = 1:kk
-        p1 = scatter!(P_trip[i][1],P_trip[i][2],markersize = markersize, markerstrokewidth = 0,
-            markercolor = colors[i], size=(600,400), leg=false, xlims = (0,107), xticks = 0:10:107,
-            ylims = (0,107), yticks = 0:10:107)
-    end
-    return p1
-end
-
 
 
 end
