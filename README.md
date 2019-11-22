@@ -4,6 +4,22 @@
 
 Project Due: Week 12/13
 
+
+
+## 0. Some Pics
+
+### 1. All routes
+
+![pic1](pic/fig1.svg)
+
+### 2. Personal trips
+
+![pic2](pic/fig4.svg)
+
+### 3. All trips
+
+![pic3](pic/fig3.svg)
+
 ## 1. Instructions
 
 ### 1.1 Format
