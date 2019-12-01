@@ -10,15 +10,15 @@ Project Due: Week 12/13
 
 ### 1. All routes
 
-![pic1](pic/fig1.svg)
+![pic1](pic/fig1.png)
 
 ### 2. Personal trips
 
-![pic2](pic/fig4.svg)
+![pic2](pic/fig4.png)
 
 ### 3. All trips
 
-![pic3](pic/fig3.svg)
+![pic3](pic/fig3.png)
 
 ## 1. Instructions
 
