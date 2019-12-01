@@ -20,6 +20,10 @@ Project Due: Week 12/13
 
 ![pic3](pic/fig3.png)
 
+### 4. Generalize trees on unobserved areas with poisson
+
+![pic3](pic/fig6.png)
+
 ## 1. Instructions
 
 ### 1.1 Format
