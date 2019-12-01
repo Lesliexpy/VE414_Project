@@ -18,7 +18,7 @@ Project Due: Week 12/13
 
 ### 3. All trips
 
-![pic3](pic/fig3.png)
+![pic3](pic/fig5.png)
 
 ### 4. Generalize trees on unobserved areas with poisson
 
