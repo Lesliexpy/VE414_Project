@@ -2,7 +2,7 @@ include("./dataSplit.jl")
 include("./MyPlot.jl")
 using Plots
 
-function autoFar(df_csv = "./data_proj_414.csv", plotnow = false)
+function autoFar(df_csv = "./data_proj_414.csv", pic_name = "# Tayes no far way (All)", plotnow = false)
 	df = dataSplit.getDF(df_csv);
 	title = names(df);
 
@@ -24,17 +24,17 @@ function autoFar(df_csv = "./data_proj_414.csv", plotnow = false)
 	Y = vcat(vcat(P[2],W[2]),G[2]);
 	Weight_close = vcat(vcat(P[4],W[4]),G[4]);
 	Weight_far = vcat(vcat(P[5],W[5]),G[5]);
-	print(length(X)," ", length(Y)," ", length(Weight_close)," ",length(Weight_far))
+	# print(length(X)," ", length(Y)," ", length(Weight_close)," ",length(Weight_far))
 
 	gr();
-	pw_far = MyPlot.getWeightPic(X,Y,Weight_far,:matter,3,5,"# Tayes no far way (All)",true);
+	pw_far = MyPlot.getWeightPic(X,Y,Weight_far,:matter,3,5,pic_name,true);
 	if plotnow
 		plot(pw_far, fmt = :png)
 	end
 	return pw_far
 end
 
-function autoClose(df_csv = "./data_proj_414.csv", plotnow = false)
+function autoClose(df_csv = "./data_proj_414.csv", pic_name = "autoClose", plotnow = false)
 	df = dataSplit.getDF(df_csv);
 	title = names(df);
 
@@ -56,10 +56,10 @@ function autoClose(df_csv = "./data_proj_414.csv", plotnow = false)
 	Y = vcat(vcat(P[2],W[2]),G[2]);
 	Weight_close = vcat(vcat(P[4],W[4]),G[4]);
 	Weight_far = vcat(vcat(P[5],W[5]),G[5]);
-	print(length(X)," ", length(Y)," ", length(Weight_close)," ",length(Weight_far))
+	# print(length(X)," ", length(Y)," ", length(Weight_close)," ",length(Weight_far))
 
 	gr();
-	pw_close = MyPlot.getWeightPic(X,Y,Weight_close,:matter,1,5,"# Tayes close by (All)",true);
+	pw_close = MyPlot.getWeightPic(X,Y,Weight_close,:matter,1,5,pic_name,true);
 	if plotnow
 		plot(pw_close, fmt = :png)
 	end
