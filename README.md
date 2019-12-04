@@ -10,15 +10,21 @@ Project Due: Week 12/13
 
 ### 1. All routes
 
-![pic1](pic/fig1.svg)
+![pic1](pic/fig1.png)
 
 ### 2. Personal trips
 
-![pic2](pic/fig4.svg)
+![pic2](pic/fig4.png)
 
 ### 3. All trips
 
-![pic3](pic/fig5.svg)
+
+![pic3](pic/fig5.png)
+
+### 4. Generalize trees on unobserved areas with poisson
+
+![pic3](pic/fig6.png)
+
 
 ## 1. Instructions
 

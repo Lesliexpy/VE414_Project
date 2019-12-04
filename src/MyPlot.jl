@@ -51,14 +51,16 @@ function get_weight(X,Y,Weight)
     return P_trip
 end
 
-function getWeightPic(X,Y,Weight, color = :inferno, markersize = 1,size_x = 5,title = "",draw_0 = true)
+function getWeightPic(X,Y,Weight, color = :inferno, markersize = 1,size_x = 5,title = "",draw_0 = true, new_draw = true)
     ## color is a list of color, you should change the color and data
     ## you can find colors at: http://docs.juliaplots.org/latest/colors/#misc
     markersize = markersize*size_x
     kk = Int(maximum(Weight))
     P_W = get_weight(X,Y,Weight)
     colors = RGBA[cgrad(color)[z] for z=range(0,stop=1,length=kk)]
-    pic = scatter()
+    if new_draw
+        pic = scatter()
+    end
     # second, plot the non-apple graph
     i = 1
     color_s = :azure3

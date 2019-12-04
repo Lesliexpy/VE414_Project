@@ -24,14 +24,14 @@ function getDF(df_name)
         "Far"=>Int));
 end
 
-function ListDataSplite(aims,mask,keep)
+function ListDataSplite(aims,mask,keep,keep_all = false)
     # cut aim with mask and keep the number "keep" in the position of mask
     # usage: P = ListDataSplite([data_X,data_Y,data_Trip,data_Close,data_Far],data_Potter,1);
     keep_list = []
     for aim in aims
         new_list = []
         for i = 1 : length(aim)
-            if mask[i] == keep
+            if mask[i] == keep || keep_all == true
                 push!(new_list,aim[i])
             end
         end
