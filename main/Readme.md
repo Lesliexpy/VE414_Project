@@ -3,8 +3,11 @@
 ## How to run this program?
 
 ``` julia
+cd main
 julia main.jl
 ```
+
+> Caution! `Julia 1.0` or `1.2` test pass 👌, `Julia 1.1` can not plot 🙅‍♂️.
 
 ## What’s the output?
 
@@ -30,7 +33,7 @@ julia main.jl
 - `julia pic.jl` plots the figures in `pic`
 - `makeGrid.jl` constract the easy-to-read csv files `close_map2.csv` and `close_map_linear.csv`
 - `em.jl` is the program to pridict the position of Jiuling accoriding to the observed data
-- `poisson.jl` prideicts the unobserved Jiulings
+- `poisson.jl` predicts the unobserved Jiulings
 
 
 
