@@ -1,7 +1,5 @@
 
 .ipynb_checkpoints
 ref
-.DS_Store
-.DS_Store
-.DS_Store
-.DS_Store
+*/.DS_Store
+old

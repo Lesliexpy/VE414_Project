@@ -8,6 +8,8 @@ using Plots;
 # export every funtion name you want to use by importall
 export dataSplitTest, getDF, ListDataSplite, get_trip
 
+println("dataSplit running ")
+
 function dataSplitTest(a = "dataSplit used!")
     print(a)
 end
